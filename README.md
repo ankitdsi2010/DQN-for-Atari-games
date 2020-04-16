@@ -49,7 +49,7 @@ The [deep_Q_learner.py](./deep_Q_learner.py) is the main script that takes care 
 
 
 - ### Training
-    you can launch the Agent training script from the `~/dqn_atari` directory using the following command:
+    you can launch the Agent training script from the `~/DQN-for-Atari-games-master` directory using the following command:
 
   `python deep_Q_learner.py --env RiverraidNoFrameskip-v4 --gpu-id 0` 
 
@@ -57,7 +57,7 @@ The [deep_Q_learner.py](./deep_Q_learner.py) is the main script that takes care 
 
   The training will run until `max_training_steps` is reached, which is specified in the [parameters.json](./parameters.json) file. There are several other parameters that can be configured using the [parameters.json](./parameters.json)  and it is recommended to adjust them based on the capabilities of the hardware you are running on. You can set `use_cuda` to `false` if you are running on a machine without a GPU.
 
-  The log files are written to the directory pointed with the `summary_file_path_prefix` parameter (the default is `logs/DQL_*`). When the training script is running, you can monitor the learning progress of the agent visually using Tensorboard. From the `~/dqn_atari` directory, you can launch Tensorboard with the following command: `tensorboard --log_dir=./logs/`. You can then visit the web URL printed on the console (the default one is: http://localhost:6006) to monitor the progress.
+  The log files are written to the directory pointed with the `summary_file_path_prefix` parameter (the default is `logs/DQL_*`). When the training script is running, you can monitor the learning progress of the agent visually using Tensorboard. From the `~/DQN-for-Atari-games-master` directory, you can launch Tensorboard with the following command: `tensorboard --log_dir=./logs/`. You can then visit the web URL printed on the console (the default one is: http://localhost:6006) to monitor the progress.
 
 
 - ### Testing
